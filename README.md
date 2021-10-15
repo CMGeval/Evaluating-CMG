@@ -33,12 +33,12 @@ The CMG models considered in our experiments are:
 
 ### 1. RQ1: Which factors affect CMG evaluation?
 
-- The potential factors include Length, Word Alignment, Semantic Scoring, Case Folding, Punctuation Removal and Smoothing
+- The potential factors include Length, Word Alignment, Semantic Scoring, Case Folding, Punctuation Removal and Smoothing.
 - For observing the effect of a specific factor, simply run the "Factor".py file under the RQ1 folder.
 
 ### 2. RQ2: Which metric is best suited to evaluate commit messages?
 
-- For running the Log-MNEXT metric and obtaining its correlation with human evaluation scores, simply run the "The Log-MNEXT metric.py" file
+- For running the Log-MNEXT metric and obtaining its correlation with human evaluation scores, simply run the "The Log-MNEXT metric.py" file.
 
 ### 3. RQ3: How do the CMG tools perform on the new metric?
 
