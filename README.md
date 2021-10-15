@@ -12,9 +12,12 @@ Please install the neccessary libraries before running our codes:
 
 ## Data & Models:
 
-The data used for our experiments can be downloaded from the Dataset folder.
-- The "human_annotations.csv" file contains the human annotated raw data of size 100.
-- The MCMD dataset for various programming languages (PLs) for each of the models is the form "Model_MCMD(number).csv", where the numbers stand for the respective PLs.
+Our data is extracted from the [MSR](https://github.com/DeepSoftwareAnalytics/CommitMsgEmpirical) dataset. The data used for our experiments can be found in the "Dataset" folder.
+
+
+- The "human_annotations.csv" file contains the human annotated scores for 100 pairs of reference and predicted commit messages.
+-  A subset of the original [MCMD](https://zenodo.org/record/5025758#.YWmXxxpBw2w) dataset has been used for our experiments. The .csv files for pairs of reference and predicted sentences is of the general form "model_MCMD(Number).csv", where "model" could be any of the CMG models listed below and "(Number)" takes one the values 1-5 according to the choice of the programming language (PL).
+
 
 | Number | PL |
 | ------------- | ----------------- |
@@ -24,29 +27,45 @@ The data used for our experiments can be downloaded from the Dataset folder.
 | 4 | JS (Javascript)|
 | 5 | Py (Python)|
 
-The CMG models considered in our experiments are:
-- NMT
-- CommitGen
-- NNGen
+The Commit Message generation (CMG) models considered in our experiments are:
+- [NMT](https://sjiang1.github.io/commitgen/)
+- [CommitGen](https://github.com/epochx/commitgen)
+- [NNGen](https://github.com/epochx/commitgen)
 
-## Running and Experimentation
+## Evaluation Metrics
 
-### 1. RQ1: Which factors affect CMG evaluation?
+The Machine Translation (MT) metrics considered in our experimentations are: BLEU4, BLEUNorm, BLEUCC, METEOR, METEOR-NEXT, ROUGE-1, ROUGE-2, ROUGE-L, TER.
 
-- The potential factors include Length, Word Alignment, Semantic Scoring, Case Folding, Punctuation Removal and Smoothing.
-- For observing the effect of a specific factor, simply run the "Factor".py file under the RQ1 folder.
+## Research Questions Asked and Answered
 
-### 2. RQ2: Which metric is best suited to evaluate commit messages?
+- RQ1: Which factors affect commit message quality?
+- RQ2: Which metric is best suited to evaluate commit messages?
+- RQ3: How do the CMG tools perform on the new metric?
 
-- For running the Log-MNEXT metric and obtaining its correlation with human evaluation scores, simply run the "The Log-MNEXT metric.py" file.
+## Experimentation and Implementation
 
-### 3. RQ3: How do the CMG tools perform on the new metric?
+### 1. Effect of various factors on the MT metrics
 
-- For observing the performance of Log-MNEXT metric on a specific model for a particular PL of the MCMD dataset, simply update the ```model_MCMD(Number).csv``` part by putting the model name in place of ```model```, number 1,2,3,4 or 5 in place of ```(Number)``` in the following code section of the file "Log-MNEXT performance on the models.py" file under RQ3.
+- The potential factors included in our study are Length, Word Alignment, Semantic Scoring, Case Folding, Punctuation Removal and Smoothing.
+- For replication of RQ1 section in the paper, simply run the ```Effect of {Factor_name}.py``` file under the "Experimental Results" folder to observe the effect of {Factor_name} factor on the metrics.
+- For implementation of the code on your own human annotated dataset, replace the ```human_annotations.csv``` part with your own human annotated .csv file in the following code snippet of the ```Effect of {Factor_name}.py``` file under the "Experimental Results" folder, followed by minor alterations in case of changes in the number of human annotators used (here, #annotators = 3).
 ```
-import csv
-import json
+with open('human_annotations.csv') as csvfile:
+    ader = csv.reader(csvfile)
+```
 
+### 2. The Log-MNEXT metric
+
+- For replication of RQ2 section in the paper, simply run the ```The Log-MNEXT metric.py``` file to obtain its correlation with human evaluation scores.
+- For implementation of the metric and getting the score for any given reference and predicted sentence pair, run the ```The Log-MNEXT metric.py``` file and then call the function ```log_mnext_score([reference],predicted)```. However, both ```reference``` and ```predicted``` are of type 'string'.
+
+### 3. Performance of Log-MNEXT on CMG models
+
+- For replication of RQ3 section in the paper, i.e, observing the performance of Log-MNEXT metric on a specific model for a particular PL of the MCMD dataset, simply update the ```model_MCMD(Number).csv``` part by putting the model name in place of ```model```, number 1,2,3,4 or 5 in place of ```(Number)``` in the  code snippet of the  ```Log-MNEXT performance on the models.py``` file under the "Experimental Results" folder.
+
+- For observing the performance of the metric on any other CMG model, replace the ```model_MCMD(Number).csv``` part of the code snippet below with the required .csv file containing the reference senetences and the predicted sentences generated by your specific model.
+
+```
 refs=[]
 preds=[]
 with open('model_MCMD(Number).csv') as csvfile:
