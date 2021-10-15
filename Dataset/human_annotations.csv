@@ -1,0 +1,100 @@
+Noting,Noting,4,4,4
+Polish,Polish,4,4,4
+add known user,add known user,4,4,4
+", refactor JDBCXABackendDataSourceFactory",", refactor JDBCXABackendDataSourceFactory",4,4,4
+kryo updated,kryo updated,4,4,4
+Update CHANGES,Update CHANGES,4,4,4
+Update ISSUE_TEMPLATE,Update ISSUE_TEMPLATE,4,4,4
+add select_order_by_with_table_star_table_name,change name select_order_by_with_table_star_table_name for parser,2,1,2
+updated CHANGES,Update CHANGES,4,4,4
+remove unused logger,Remove unused property,3,3,3
+Fix nullness error,Fix nullness test,3,3,3
+Built the latest version,Built the latest snapshot,3,3,3
+Add Gradle Wrapper validation,Add Gradle Wrapper Validation GitHub Action,3,3,3
+typo,typo .,4,4,4
+fixed issue,fixed for issue,4,4,4
+remove nacos test,Remove tmp directory,2,1,2
+PetSoar !,PetSoar ! not PetStore,2,2,2
+", refactor Int2BinaryProtocolValueTest Int2BinaryProtocolValueTest execute",", refactor Int2BinaryProtocolValueTest",3,2,3
+", refactor TimeBinaryProtocolValueTest TimeBinaryProtocolValueTest execute",", refactor TimeBinaryProtocolValueTest",3,2,3
+fix logview bug,modifty the logview,2,1,2
+add configMapOrchestrationListener ( ),add setup ( ),2,2,3
+Mock Data name fix,Mock data tool icon,2,2,2
+Update rat to 0 . 11,RAT 0 . 11,3,2,3
+[ py ] fix EdgeOptions,[ py ] Remove unused import,1,0,1
+RedissonRedLock . sync fixed,RedissonRedLock unlock fixed .,3,3,3
+Fix typo in websocket ( ),Fix typo in documentation,3,3,3
+Fix test error,Simulate false unit test,2,1,1
+Fix test,Fix JUnit reports location,2,1,2
+bug fixed for issue,"bug fixed for SQLInListExpr , issue 1076",3,3,3
+Add @ since annotation to Enums .,Add @ since for Enums . getField .,3,2,3
+add . gitignore,SDK : Add missing . gitignore,3,3,3
+Add Gradle Wrapper validation,"Reintroduce "" Add Gradle Wrapper Validation GitHub Action """,3,2,3
+Perspective . BOTTOM fix,DBeaver perspective config,1,1,1
+added chain diagram,added chain of responsibility class diagram,3,3,3
+Update README . md ( ),Update README ( ),4,4,4
+Merge pull request from jasta / fix - Projects_using_MPAndroidChart,Update Projects_using_MPAndroidChart . txt,1,0,0
+[ DOCS ] Fix typo in date format docs,[ DOCS ] fixed typo in date - format . asciidoc,4,3,4
+SimonStewart : Fixing the Capabilities,SimonStewart : Backward compatibility fix,3,3,3
+[ DOCS ] Fix typo in setup docs,[ DOCS ] Fixed typo .,3,3,4
+Mute LicensingDocumentationIT . ( ),Mute LicenseDocumentationIT # testGetLicense ( ),3,3,3
+updated jvmci import,Add Binary repo for jvmci,1,1,1
+Fix typo in README . md,Fix typo .,3,2,3
+Upgrade to Netty 4 . 0 . 8 . Final,Upgrade to netty 4 . 0 . 8 . Final,4,4,4
+Remove TODO,Remove todo in StringEncoder ( ),3,2,3
+Data transfer : changes fix,Transfer status fix,2,2,2
+[ fixed ] SpriteBatch . dispose ( ) .,[ fixed ] dispose for spritebatch . ugh . . .,3,2,3
+DanielWagnerHall : Fixing the test .,DanielWagnerHall : Removing trailings space,1,1,2
+Update GNU import .,Fix GPLv2 license URL .,0,0,0
+[ DOCS ] Fix typo in allocation . asciidoc,Update allocation . asciidoc,3,2,3
+[ Monitoring ] Fix test case for test ( ),EQL : Fix async EQL Rest test ( ),2,2,2
+SimonStewart : Fixing the build build .,SimonStewart : Officially target Java6 .,1,1,1
+Upgrade to plexus - utils 3 . 0 . 24,Upgrade to Plexus Utils 3 . 0 . 24,4,4,4
+Add missing RestFB,Backport missing 3rd party starter reference,1,1,1
+Fix a bug in SnappyFramedEncoderTest,Fix reported leaks,2,1,2
+QM : null type fix,NPE fix,2,1,2
+Rename setServer to setServer .,Retain old parameter type .,0,0,0
+[ Gradle Release Plugin ] - pre tag commit : ' 1 . 3 . 0 - SNAPSHOT ' .,1 . 3 . 0 - SNAPSHOT,2,2,3
+Fix typo in cpp . md,Fix target label .,2,1,2
+Fix visibility of visibility in go,Use default_visibility instead of visibility in package ( ),1,2,2
+Add bazel ( ) to WORKSPACE,Give a name to the Bazel workspace,2,1,2
+[ DOCS ] EQL : Update ODBC ODBC docs ( ),[ DOCS ] Fixed bad cross doc link .,1,1,1
+Merge pull request from oleg - nenashev / script / 1 . 65,Update script - security to 1 . 65,1,1,1
+[ grid ] Fixing a bug in the DriverServiceSessionFactory stop,[ grid ] Stop driver server when session is over . Fixes,1,1,2
+[ fixed ] Mesh . setVertices ( ) .,[ fixed ] Bug in Mesh . setIndices ( ) . had to clear buffer first .,1,1,2
+Add build to build CI,Switch to parametric CI jobs ( ),1,1,1
+Remove unused license from plugin,Remove debugging println from API JAR task,2,1,2
+Fix error message in args,Fix git log check start date,2,1,1
+[ FLINK - 10366 ] [ batch ] Add json dependency to flink - hcatalog - connectors,[ FLINK - 5050 ] [ build ] Remove transitive JSON . org dependency,2,2,2
+[ TEST ] Fix cat . allocation . allocation . allocation,[ TEST ] cat . allocation / One index : allow leading spaces in unassigned shards lines,2,2,2
+for : remove useless test case,remove blank line .,2,1,2
+add runtime - connector - java,add mysql dependency,2,1,1
+[ ci ] fix overlay build,Update overlay revision .,1,1,1
+SQL editor fix ( fix ),RS close fix,1,1,1
+Add Spring Integration metrics to docs,Add missing title,2,1,2
+Add benchmark for benchmark tests .,Add memory benchmarks to BenchTest task,3,3,3
+[ FIXED HUDSON - 21394 ],fixed a horrible horrible memory leak .,2,1,2
+[ fixed ] ScaledNumericValue # ScaledNumericValue .,Fixed IndependentScaledNumericValue .,2,2,3
+[ DOCS ] Fix typo in intervals query docs,[ Docs ] Remove boost parameter from intervals - query example ( ),1,1,1
+Fix broken link to github - tag,Set correct github tag for generated docs,1,1,1
+fixed a typo in the BuildTrigger .,fixed typo,3,2,3
+MichaelTamm : remove selenium - htmlunit - driver from java - htmlunit - driver,"removing htmlunit driver from java pom file , it ' s external now",2,2,3
+Fix crash in message message .,Fix avatar location in a group conversation .,2,1,2
+[ JENKINS - 8905 ] - Update changelog for JENKINS - 8905,[ FIXED JENKINS - 8892 ] update changelog,3,2,3
+Add GCC test for float2i32bit i32 . 0,Add testcase for float to i32 bitcast,2,2,2
+[ hotfix ] [ tests ] Fix typo in log4j - test . properties,[ tests ] Revert accidentally committed log level change for tests,1,1,1
+[ ci ] [ travis ] Add gem install - - - - version,"[ travis ] Fix some ruby dependencies for travis , see",1,1,1
+[ DOCS ] Fix typo in termvectors . asciidoc,[ DOCS ] Update term vectors snippet to prevent CI failure ( ),1,1,1
+SimonStewart : Fixing a typo in the formPage page,SimonStewart : Green bar with HtmlUnit .,1,1,1
+Merge pull request from oleg - nenashev / maven / 1 . 42,upgrade maven - antrun - extended - plugin 1 . 39 - > 1 . 42,1,1,1
+[ py ] fix binary capabilities,py : use dict getter to retrieve binary,2,1,1
+Update MyBatis - User - Guide - Guide,Add logging information to the user ' s guide,2,1,2
+[ DOCS ] Fix typo in shrink test,Adjust skip version for shrink index test,2,2,2
+Remove unused @ since .,Remove a @ since tag that was just plain false,3,2,2
+test : fix test error,test : wait only for the index test_1,1,1,1
+fix the error message in AbstractDirectory cluster directory .,fix compile error .,2,1,2
+updated to 3 . 0 . 0 . RC2,updated version to RC2,3,2,3
+Remove unnecessary System . err ( ),Remove cruft,2,1,2
+Add a test to the testModule .,Shuffling from internal change .,0,0,0
+LinearScan : fix liveIn . liveIn .,Merge .,0,0,0
+[ bazel ] Fix . bazelrc file,Increasing bazel test timeout,1,2,1
